@@ -1,0 +1,10 @@
+---
+- name: Main Staffulty Maintenance
+  hosts: localhost
+  become: yes
+
+  tasks:
+    - include: tasks/removePackages.yml
+    - include: tasks/addPackages.yml
+    - include: tasks/placeFiles.yml
+    - include: tasks/cronJobs.yml

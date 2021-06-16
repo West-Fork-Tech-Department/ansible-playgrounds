@@ -1,0 +1,7 @@
+- name: Copy the default.pa file into the pulse config
+  ansible.builtin.copy:
+    src: ../files/default.pa
+    dest: /etc/skel/.config/pulse/
+    owner: user
+    group: user
+    mode: '0644'

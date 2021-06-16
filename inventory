@@ -1,0 +1,13 @@
+[HS_Teacher]
+
+
+[self]
+localhost
+
+[all:children]
+HS_Teacher
+self
+
+
+[all:vars]
+ansible_python_interpreter=/usr/bin/python3
